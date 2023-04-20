@@ -42,7 +42,6 @@ function ArticleEa() {
           <span  className='texttitle_color'> <Link to='/EaProduct'>Buffet EA </Link></span> 
           <span className='texttitle_back'>เป็น EA ที่ถูกคิดค้นและออกแบบมาเพื่อเทรดเดอร์มือใหม่ที่ต้องการตัวช่วยในการวิเคราะห์แนวโน้มตลาด สามารถช่วยออกออร์เดอร์ได้หลากหลาย สามารถ Backtest และเปิดระบบ Auto Trade ได้อีกด้วย</span>
 
-
           </div>
 
         </div>

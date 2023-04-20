@@ -10,7 +10,7 @@ function Homepage() {
   return (
     <div>
         <Navbar></Navbar>
-        <h1>home</h1>
+        <div className="home">
         <div className="landingpage">
           <ContenBox1></ContenBox1>
 
@@ -23,6 +23,7 @@ function Homepage() {
         </div>
 
         <Footers></Footers>
+        </div>
     </div>
   );
 }

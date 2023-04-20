@@ -1,5 +1,8 @@
 
 import Navbar from '../component/navbar';
+import ContentProduct from '../component/Eaproduct/contentBoxproduct';
+import Footers from '../component/footter';
+import '../css/Eaproduct.css'
 function Eaproduct() {
 
   console.log("test");
@@ -11,10 +14,15 @@ function Eaproduct() {
 
       <div className="Eaproduct">
         <div className="landingpage">
-          <h1>Eaproduct</h1>
+            <section>
+            <ContentProduct></ContentProduct>
+          </section>        
         </div>
 
 
+        <section>
+          <Footers></Footers>
+        </section>
       </div>
     </div>
   );

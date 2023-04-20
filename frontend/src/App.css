@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+* {
+  font-family: Poppins, system-ui; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+  --black-color: #1a2e44;
+  --black-color2:#081330;
+  --black-color-hover: #566583;
+  --color-background: #F8F6FA;
+  --color-infotextblue:#635FB6;
+  --color-infotextblue2:#8BB4F0;
+  --color-infotextpink1:#A67DB4;
+  --color-infotextpink2:#EA9271;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  --font-size--boldtext: 45px;
+  --font-size--medium:35px;
+  --font-size--slimtext: 16px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  --font-mobie-small: 14px;
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+  --color-text-heading: hsla(var(--text-h), var(--text-s), max(3, calc(var(--text-l) - 15)), 1);
+    
+--color-primary: #7380ec;
+--color-danger: #ff7782;
+--color-success: #41f1b6;
+--color-warning: #ffbb55;
+--color-white: #fff; 
+--color-back: rgb(0, 0, 0);
+--color-info-dark: #7d8da1;
+--color-info-light: #dce1eb;
+--color-dark: #363949;
+--color-light: rgba(132, 139, 200, 0.18);
+--color-primary-variant: #111e88;
+--color-dark-variant: #677483;
+
+--card-border-radius: 2rem;
+--border-radius-1: 0.4rem;
+--border-radius-2: 0.8rem;
+--border-radius-3: 1.2rem;
+
+--card-padding: 1.8rem;
+--padding-1: 1.2rem;
+
+--box-shadow: 0 0.5rem 3rem var(--color-light);
 }

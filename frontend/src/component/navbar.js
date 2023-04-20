@@ -4,7 +4,10 @@ import logo from "../img/LOGO.png";
 import { Link} from "react-router-dom";
 import useToken from "../page/useToken";
 
-
+function logout() {
+    sessionStorage.removeItem("token");
+    window.location.replace("http://localhost:3000/Signin");
+  }
 function Navbar() {
   const { token, setToken } = useToken();
 
@@ -26,7 +29,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="">Log In </Link>
+              <Link to="/Signin">Log In </Link>
             </li>
           </ul>
         </nav>
@@ -37,7 +40,7 @@ function Navbar() {
     var str1 = sessionStorage.getItem("token").replace(/(")/, "");
     var str2 = str1.replace(/(")/, "");
     //console.log(str2);
-    if (str2 == "admin") {
+    if (str2 === "admin") {
       return (
         <div className="header">
           <img className="navlogo" src={logo} alt=""/>
@@ -49,7 +52,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link > Logout</Link>
+                <Link onClick={logout}> Logout</Link>
               </li>
             </ul>
           </nav>
@@ -73,7 +76,7 @@ function Navbar() {
               </Link>
             </li>
             <li>
-                <Link > Logout</Link>
+                <Link onClick={logout}> Logout</Link>
               </li>
           </ul>
         </nav>
