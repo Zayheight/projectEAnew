@@ -36,7 +36,7 @@ function Signin() {
   }else{
     var str1 = sessionStorage.getItem("token").replace(/(")/, "");
     var str2 = str1.replace(/(")/, "");
-    if(str2==="admin"){
+    if(str2=="admin"){
       window.location.replace("http://localhost:3000/dashbord");
     }
     else{
